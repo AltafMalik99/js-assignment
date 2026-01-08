@@ -1,4 +1,4 @@
-let count = 0;
+var count = 0;
 
 document.getElementById("inc").onclick = function(){
     count++;
@@ -15,47 +15,19 @@ document.getElementById("reset").onclick = function(){
     document.getElementById("num").innerText = count;
 }
 
+// second.....
 
-// second
+var pass = document.getElementById("pass");
+var icon = document.getElementById("icon");
 
-document.getElementById("chk").onclick = function(){
-    let p = document.getElementById("pass");
-
-    if(p.type === "password"){
-        p.type = "text";
+icon.onclick = function(){
+    if(pass.type === "password"){
+        pass.type = "text";
+        icon.textContent = "👁️"; 
     }else{
-        p.type = "password";
+        pass.type = "password";
+        icon.textContent = "👁️"; 
     }
 }
 
-// thrid
 
-
-
-
-document.getElementById("btn").onclick = function(){
-
-    let n = parseInt(document.getElementById("num").value);
-    let res = "";
-
-    if(n % 2 === 0){
-        res += "Even Number<br>";
-    }else{
-        res += "Odd Number<br>";
-    }
-
-    let prime = true;
-
-    if(n < 2) prime = false;
-
-    for(let i=2; i<=Math.sqrt(n); i++){
-        if(n % i === 0){
-            prime = false;
-            break;
-        }
-    }
-
-    res += prime ? "Prime Number" : "Not Prime Number";
-
-    document.getElementById("result").innerHTML = res;
-}
