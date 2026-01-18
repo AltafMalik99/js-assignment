@@ -1,36 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Counter App</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- Counter App...... -->
+   <div class="box">
+    <!-- 1......counter -->
+    <h2> Counter</h2>
 
-<div class="box">
-    <h1 id="num">0</h1>
+    <div id="display">0</div>
 
-    <button id="dec">Decrease</button>
-    <button id="reset">Reset</button>
-    <button id="inc">Increase</button>
+    <button onclick="add()">+ Increment</button>
+    <button onclick="minus()">- Decrement</button>
+    <button onclick="clearCount()">Reset</button>
 </div>
 
+<div class="box">
 
-<!-- second project..password show and hide .........-->
+    <!-- second.. -->
 
-<div class="container">
-    <h2>Login</h2>
+    <h2>User Form</h2>
 
-    <div class="password-box">
-        <input type="password" id="pass" placeholder="Enter Password">
-        <span id="icon">👁️</span>
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+
+    <div class="password-wrap">
+        <input type="password" id="password">
+        <span onclick="togglePass()">Show</span>
     </div>
 </div>
 
+<div class="box">
 
-<script src="script.js"></script>
+    <!-- third... -->
 
+    <h2>Number Checker</h2>
+
+    <input type="number" id="numberInput" placeholder="Enter number">
+    <button onclick="checkNum()">Check</button>
+
+    <p id="eoResult"></p>
+    <p id="primeResult"></p>
+</div>
+
+
+
+    <script src="app.js"></script>
 </body>
-</html>
 
+</html>
