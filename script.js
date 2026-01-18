@@ -74,3 +74,4 @@ function checkNum(){
     prime.innerText = isPrime ? "Prime Number" : "Not Prime";
     prime.className = isPrime ? "green" : "red";
 }
+
