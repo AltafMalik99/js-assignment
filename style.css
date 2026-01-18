@@ -1,53 +1,46 @@
 body{
-    font-family: Arial;
-    text-align:center;
-    margin-top:80px;
+    font-family: sans-serif;
+    background:#f1f1f1;
 }
+
 .box{
-    display:inline-block;
-    padding:20px 40px;
+    background:white;
+    width:350px;
+    margin:40px auto;
+    padding:20px;
     border-radius:10px;
+    text-align:center;
     box-shadow:0 0 10px gray;
 }
+
 button{
-    padding:10px 20px;
     margin:5px;
+    padding:8px 15px;
+    border:none;
+    background:greenyellow;
+    color:rgb(22, 14, 14);
     cursor:pointer;
-}
-h1{
-    font-size:50px;
-}
-
-
-/* second project .......*/
-body{
-    font-family: Arial;
-    display:flex;
-    justify-content:center;
-    margin-top:100px;
-}
-
-.container{
-    padding:30px;
-    box-shadow:0 0 10px gray;
-    border-radius:10px;
-}
-
-.password-box{
-    position: relative;
+    border-radius: 10px;
 }
 
 input{
-    padding:8px 35px 8px 8px;
-    width:200px;
+    width:90%;
+    padding:8px;
+    margin:6px 0;
 }
 
-#icon{
+.password-wrap{
+    position:relative;
+}
+
+.password-wrap span{
     position:absolute;
-    right:10px;
-    top:8px;
+    right:15px;
+    top:12px;
     cursor:pointer;
-    font-size:18px;
+    font-size:12px;
+    color:#555;
 }
 
-
+.green{color:green;}
+.red{color:red;}
